@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <title>Rezana građa - Savić</title>
+	  <meta charset="utf-8" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	  
+	  <link rel="stylesheet" href="files/maincss.css" />
+	  
+	  <script src="files/js.js"></script>
+
+	  <meta name="description" content="Građa Savić već 30 godina uspešno vrši proizvodnju i distribuciju rezane građe na teritoriji cele Srbije, a sve po želji i meri kupca. Odlikuje nas posvećenost i prilagodljivost kupcu, mogućnost naručivanja manjih i većih količina građe po vašim potrebama. Za sve dodatne informacije i pitanja vam stojimo na raspolaganju.">
+	  
+		<meta property="og:title" content="Rezana građa - Savić">
+		<meta property="og:description" content="ĐORĐE SAVIĆ PREDUZETNIK REZANJE I OBRADA DRVETA GRAĐA SAVIĆ BREŽĐE">
+		<meta property="og:image" content="https://gradjasavic.rs/files/logo.png"> <!--link do slike-->
+		<meta property="og:url" content="https://gradjasavic.rs"> <!--link do sajta-->
+		<meta name="twitter:card" content="summary_large_image">
+
+		<meta property="og:site_name" content="Rezana građa - Savić">
+		<meta name="twitter:image:alt" content="Sajt">
+		<link rel="shortcut icon" type="image/jpg" href="favicon.png"/>
+	  
+  </head>
+  <body onload="bodyload()">
+	<div class="main">
+		<div class="home">
+			<span class="dispnone" id="natpis1"></span>
+		</div>
+		<div class="proizvodi">
+			<span class="forscroll" id="products" style="top:-120px"></span>
+			<div class="proizvodititle">
+				PROIZVODI
+			</div>
+			<div class="proizvodiHolder">
+				<div class="proizvod" id="letve" onclick="setProizvod(0,1)">
+					<img src="files/letva.png" class="proizvodImg" alt="letve">
+					<div class="proizvodText">Letve</div>
+				</div>
+				<div class="proizvod" id="daske" onclick="setProizvod(1,1)">
+					<img src="files/daska.png" class="proizvodImg" alt="daske">
+					<div class="proizvodText">Daske i<br>Fosne</div>
+				</div>
+				<div class="proizvod" id="stafne" onclick="setProizvod(2,1)">
+					<img src="files/stafna.png" class="proizvodImg" alt="stafne">
+					<div class="proizvodText">Stafne</div>
+				</div>
+				<div class="proizvod" id="grede" onclick="setProizvod(3,1)">
+					<img src="files/greda.png" class="proizvodImg" alt="grede">
+					<div class="proizvodText">Grede</div>
+				</div>
+				<div class="proizvod" id="palete" onclick="setProizvod(4,1)">
+					<img src="files/paleta.png" class="proizvodImg" alt="palete">
+					<div class="proizvodText">Palete</div>
+				</div>
+				<div class="proizvod" id="ostalo" onclick="setProizvod(5,1)">
+					<img src="files/ostalo.png" class="proizvodImg" alt="ostalo">
+					<div class="proizvodText">Ostalo</div>
+				</div>
+			</div>
+			<div class="proizvodislike">
+				<span class="forscroll" id="productspictures" style="top: -100px;"></span>
+				<div class="slideshow">
+					<div class="arrslide" onclick="slideshow(0)">&#10094;</div>
+					<div class="slidepic">
+						<img src="files/letve1.jpg" class="secondarypic1" id="slideop1">
+						<img src="files/letve2.jpg" class="slidemainpic" id="slideop2">
+						<img src="files/letve3.jpg" class="secondarypic2" id="slideop3">
+					</div>
+					<div class="arrslide" onclick="slideshow(1)">&#10095;</div>
+				</div>
+			<div class="proizvodiOpis" id="proizvodiOpis">
+			</div>
+			</div>
+		</div>
+		
+		<div class="aboutus">
+			<span class="forscroll" id="aboutus"></span>
+			<div class="aboutusTitle">
+				<span style="float:left">O NAMA</span>
+				<span class="phonesmall" style="opacity: 0.8;color:transparent;-webkit-text-stroke: 1px white;text-shadow: none;">&nbsp; &#10094;</span>
+				<span class="phonesmall" style="opacity: 0.5;">&nbsp; &#10094;</span>
+				<span class="phonesmall" style="opacity: 0.8;color:transparent;-webkit-text-stroke: 1px white;text-shadow: none;">&nbsp; &#10094;</span>
+				<span class="phonesmall" style="opacity: 0.5;">&nbsp; &#10094;</span>
+			</div>
+			<div class="aboutusHolder">
+				<span class="aboutusText">
+					<span style="float:left">
+						Građa Savić već 30 godina uspešno vrši <b>proizvodnju i distribuciju</b> rezane građe na teritoriji cele Srbije, a sve po želji i meri kupca. Odlikuje nas <b>posvećenost i prilagodljivost</b> kupcu, mogućnost naručivanja <b>manjih i većih količina</b> građe po vašim potrebama. Za sve dodatne informacije i pitanja vam stojimo na raspolaganju.
+					</span>
+					<br>
+					<a href="#contact">
+						<span class="forkontakt">
+							Kontaktirajte nas!
+						</span>
+					</a>
+				</span>
+				<span class="aboutusSlika">
+					<img src="files/primer.jpg" class="slikaabout">
+				</span>
+			</div>
+		</div>
+
+		<div class="services">
+			<span class="forscroll" id="services" style="top:-110px"></span>
+			<div class="servicesTitle">USLUGE</div>
+			<div class="servicesHolder">
+				<div class="service service2">
+					Izrada rezane građe po meri i prevoz na teritoriji cele Srbije
+				</div>
+				<div class="service service3">
+					Fina obrada elemenata rezane građe
+				</div>
+				<div class="service service2">
+					<span>Izrada elemenata rezane građe za terase i letnjikovce</span>
+				</div>
+				<div class="service service3">
+					Izrada proračuna krovne konstrukcije
+				</div>
+				<div class="service service2">
+					Mogućnost montaže krovne konstrukcije
+				</div>
+			</div>
+		</div>
+
+		<div class="gallery">
+			<span class="forscroll" id="gallery"></span>
+			<div class="galleryTitle">
+				Galerija
+			</div>
+			<div class="galleryHolder">
+				
+				<img class="galleryPic galleryPic6" style="transform: rotateZ(4deg);" onclick="zoompic(5)" src="files/slika5.jpg">
+				<img class="galleryPic galleryPic5" style="transform: rotateZ(0deg);" onclick="zoompic(4)" src="files/slika4.jpg">
+				<img class="galleryPic galleryPic4" style="transform: rotateZ(7deg);" onclick="zoompic(3)" src="files/slika3.jpg">
+				<img class="galleryPic galleryPic3" style="transform: rotateZ(-5deg);" onclick="zoompic(2)" src="files/slika2.jpg">
+				<img class="galleryPic galleryPic2" style="transform: rotateZ(2deg);" onclick="zoompic(1)" src="files/slika1.jpg">
+				<img class="galleryPic galleryPic1" style="transform: rotateZ(-7deg);" onclick="zoompic(0)" src="files/slika0.jpg">
+				<img class="galleryPic galleryPic0" style="transform: rotateZ(1deg);" onclick="zoompic(6)" src="files/slika6.jpg">
+		</div>
+			<div class="dispnone" id="onepic">
+				<div class="onepicX" onclick="closeonepic()">&#10006;</div>
+				<div class="onepicleft" onclick="onepicleft()">&#10094;</div>
+				<img src="" id="onepicimage" class="onepicimage">
+				<div class="onepicright" onclick="onepicright()">&#10095;</div>
+			</div>
+		</div>
+		<div class="kontaktdivbefore"></div>
+		<div class="kontaktdiv">
+			<span class="forscroll" id="contact"></span>
+				<div style="align-self: center">
+					<img src="files/logo.png" class="logocontact">
+				</div>
+			<div style="text-align:center;align-self: stretch;display:flex;flex-direction:column;align-items:center;justify-content: space-around;">		
+				<span class="newline2">
+					<a class="socialsa socialsanohover" href="tel:+381613111127">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+						  </svg> &nbsp;
+						+381 61 311 1127
+					</a>
+				</span>
+
+				<span class="newline2">
+					<a class="socialsa socialsanohover" href="tel:+381693111127">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+						  </svg> &nbsp;
+						+381 69 311 1127
+					</a>
+				</span>
+					
+				<span class="newline2">
+					<span class="socialsa socialsanohover">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-clock-fill" viewBox="0 0 16 16">
+							<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+						  </svg> &nbsp;
+						Pon-Sub 07:00-17:00
+						</span>
+				</span>
+					
+				<span class="newline2">
+					<a class="socialsa" href="mailto:office_gradjasavic@yahoo.com">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+							<path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+						  </svg> &nbsp;
+						office_gradjasavic@yahoo.com
+					</a>
+				</span>
+					
+				<span class="newline2">
+					<a class="socialsa" href="https://goo.gl/maps/Fje3SPXSsLMTFqDc6?coh=178573&entry=tt" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-geo-fill" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+						  </svg> &nbsp;
+						Brežđe 14244, Divčibarski put bb
+					</a>
+				</span>
+				<span class="newline2">
+					<a class="socialsa" href="files/poslovni_podaci.pdf" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+							<path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
+							<path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+						  </svg> &nbsp;
+						Poslovni podaci
+					</a>
+				</span>
+				</div>
+			<div class="formap">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11444.904932198895!2d20.0549608!3d44.1818054!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4759e7bb4a15ff9f%3A0xd58ae45c749fe7d9!2zR3JhxJFhIFNhdmnEhw!5e0!3m2!1sen!2srs!4v1683827003180!5m2!1sen!2srs" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</div>
+		<div class="finalfooter">
+			<span>Created by: <a href="https://mihajlobondji.com" class="footerLink">Mihajlo Bonđi</a>
+		</div>
+    </div>
+
+
+	
+    <div class="header" id="header">
+		<img src="files/logo.png" class="logo" alt="logo" id="logo">
+		<span class="linksHolder" id="linksHolder">
+			<span class="newline">
+				<a class="headerLinks" onclick="setTimeout('menu()',300);" href="#" onclick="window.scrollTop();">
+					<span class="linija"></span>
+					<span>POČETNA</span>
+				</a>
+			</span>
+			<span class="newline">
+				<a class="headerLinks" onclick="setTimeout('menu()',300);" href="#products">
+					<span class="linija"></span>
+					<span>PROIZVODI</span>
+				</a>
+			</span>
+			<span class="newline">
+				<a class="headerLinks" onclick="setTimeout('menu()',300);" href="#aboutus">
+					<span class="linija"></span>
+					<span>O NAMA</span>
+				</a>
+			</span>
+			<span class="newline">
+				<a class="headerLinks" onclick="setTimeout('menu()',300);" href="#services">
+					<span class="linija"></span>
+					<span>USLUGE</span>
+				</a>
+			</span>
+			<span class="newline">
+				<a class="headerLinks" onclick="setTimeout('menu()',300);" href="#gallery">
+					<span class="linija"></span>
+					<span>GALERIJA</span>
+				</a>
+			</span>
+			<span class="newline">
+				<a class="headerLinks" onclick="setTimeout('menu()',300);" href="#contact">
+					<span class="linija"></span>
+					<span>KONTAKT</span>
+				</a>
+			</span>
+			<span class="newline">
+				<a class="headerLinks" onclick="setTimeout('menu()',300);" href="https://goo.gl/maps/Fje3SPXSsLMTFqDc6?coh=178573&entry=tt" target="_blank">
+					<span class="linija"></span>
+					<span>MAPA</span>
+				</a>
+			</span>
+		</span>
+		<div class="burger" onclick="menu()" id="burger">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
+	</div>
+	<script>
+		window.addEventListener("scroll", scrollScript);
+		window.addEventListener('click', function(e){
+		 if (!(document.getElementById('header').contains(e.target)))
+		checkmenu();
+});
+	</script>
+  </body>
+</html>
