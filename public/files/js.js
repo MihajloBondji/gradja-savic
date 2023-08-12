@@ -55,7 +55,7 @@ var slikeProiz=[
 	["letve1","letve2","letve3","letve4"],
 	["daske1","daske2","daske3","daske4"],
 	["stafne1","stafne2","stafne3","stafne4"],
-	["grede1","grede2","grede3","grede4"],
+	["grede1","grede2","grede3","grede4","grede5","grede6","grede7","grede8","grede9"],
 	["palete1","palete2","palete3","palete4"],
 	["ostalo1","ostalo2","ostalo3","ostalo4","ostalo5","ostalo6","ostalo7","ostalo8","ostalo9"]
 ];
