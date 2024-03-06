@@ -32,6 +32,7 @@ function bodyload(){
 	document.getElementById('natpis1').className="natpis natpisafter";
 	dodajx(0,0);
 	setProizvod(0,0);
+	document.getElementById("myVideo").playbackRate = 0.7;
 }
 
 var xtxt=["Tradicija duga 30 godina.","Rezana gradja po vasoj meri.","Letve, stafne, daske, grede, palete...","Beli bor, crni bor, camovina..."];
