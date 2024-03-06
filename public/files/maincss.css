@@ -838,11 +838,15 @@ a:visited{
 	color:#D6AD84;
 }
 
-#myVideo {
+.forVideo{
 	position: absolute;
-	top: 0px;
-	left: 0;
-	min-width: 100%;
+	top: 0;
+	width: 200%;
+	height: 100%;
+}
+
+#myVideo {
+	min-width: 50%;
 	min-height: 100%;
 }
 
@@ -1074,4 +1078,10 @@ a:visited{
 .servicesTitle{
 	width: 50%;
 }
+
+#myVideo{
+
+	transform: translateX(-22vh);
+}
+
 }
